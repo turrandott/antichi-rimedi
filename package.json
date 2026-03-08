@@ -1,0 +1,13 @@
+{
+  "name": "Antichi Rimedi",
+  "version": "1.0",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i input.css -o output.css --minify",
+    "dev": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.0",
+    "tailwindcss": "^4.2.0"
+  }
+}

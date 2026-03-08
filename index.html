@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antichi Rimedi — Salvatore</title>
+    <meta name="description" content="Antichi Rimedi — rimedi naturali, unguenti, oli essenziali e acque floreali artigianali." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-sans text-gray-800 leading-relaxed antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 inset-x-0 z-50 bg-black/90 backdrop-blur-sm transition-colors duration-300" id="nav">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-10 h-20 max-md:px-5">
+        <a href="#" class="text-[22px] font-semibold text-white tracking-wide whitespace-nowrap flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full overflow-hidden shrink-0">
+            <img src="images/logo.jpg" alt="Antichi Rimedi" class="w-full h-full object-cover scale-125" />
+          </div>
+          Antichi Rimedi
+        </a>
+        <div
+          class="flex gap-8 max-md:hidden max-md:absolute max-md:top-20 max-md:inset-x-0 max-md:bg-black/95 max-md:flex-col max-md:items-center max-md:py-6 max-md:gap-5"
+          id="navLinks"
+        >
+          <a href="#about" class="text-white/80 text-base hover:text-white transition-colors">La mia storia</a>
+          <a href="#products" class="text-white/80 text-base hover:text-white transition-colors">Prodotti</a>
+          <a href="#gallery" class="text-white/80 text-base hover:text-white transition-colors">Galleria</a>
+          <a href="#contacts" class="text-white/80 text-base hover:text-white transition-colors">Contatti</a>
+          <div class="flex justify-center gap-3">
+            <a href="tel:+393201553542" class="text-white/80 text-base hover:text-white transition-colors">+39 320 155 3542</a><br />
+            <a
+              href="https://wa.me/393201553542"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              class="flex items-center justify-center rounded-full text-white hover:-translate-y-0.5 hover:opacity-85 transition-all duration-200"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <button class="hidden max-md:flex flex-col gap-[5px] cursor-pointer p-1 bg-transparent border-none" id="navBurger" aria-label="Menu">
+          <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+          <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+          <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center text-center bg-black overflow-hidden" id="home">
+      <div class="absolute inset-0 bg-[url('images/SALVA_1.jpg')] bg-center bg-cover bg-no-repeat opacity-40"></div>
+      <div class="relative z-10 px-10 pt-30 pb-20 max-w-3xl max-sm:px-5 max-sm:pt-25 max-sm:pb-15">
+        <p class="text-sm tracking-[3px] uppercase text-gold mb-6">Rimedi Naturali dalla Tradizione</p>
+        <h1 class="text-[clamp(40px,7vw,72px)] font-semibold text-white leading-tight mb-6 tracking-wide">Antichi Rimedi</h1>
+        <h1 class="text-[clamp(30px,4vw,50px)] font-semibold text-white leading-tight mb-6 tracking-wide">Salvatore Azzolini</h1>
+        <p class="text-lg text-white/75 leading-relaxed mb-10 max-w-xl mx-auto">
+          Unguenti, oli essenziali, acque floreali e integratori naturali — preparati artigianalmente con erbe e metodi della tradizione.
+        </p>
+        <a
+          href="#contacts"
+          class="inline-block px-10 py-3.5 text-[15px] font-semibold tracking-wide rounded bg-green-brand text-white hover:bg-green-dark hover:-translate-y-px transition-all duration-200"
+          >Contattami</a
+        >
+      </div>
+    </section>
+
+    <!-- La mia storia -->
+    <section class="bg-light-blue py-25 px-10 max-md:py-18 max-md:px-6 max-sm:py-12 max-sm:px-4" id="about">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 gap-15 items-center max-md:grid-cols-1 max-md:gap-10">
+          <img src="images/SALVA_2.jpg" alt="Salvatore al negozio" class="rounded-xl object-cover w-full max-h-[900px]" />
+          <div class="text-green-700">
+            <h3 class="text-sm font-bold">La mia storia</h3>
+            <h2 class="text-[clamp(24px,3vw,36px)] font-semibold mb-5 leading-snug">Sono Salvatore Alchimista.</h2>
+            <p class="text-base">
+              Essendo un ragazzino di una piccola città di montagna chiamata San Mauro, non sapevo che la mia vita sarebbe stata legata a un viaggio
+              continuo, sia nello spazio del mondo che in quello interiore. A pochi anni i miei genitori e i miei fratelli si sono trasferiti a
+              Palermo. Città di molte culture, con un'architettura meravigliosa e una varietà di piatti di tutto il mondo. I miei fratelli molto più
+              grandi hanno studiato albergheria, quindi con il tempo hanno fondato una rete di hotel con il nome Azzolini, il nostro cognome di
+              famiglia. Grazie a questo, ci siamo presto trasferiti tutti al nord, nella bella Lombardia, sul colle di Sacro Monte, dove mio fratello
+              che gestiva l'attività di famiglia ha comprato un hotel nella parte storica di Varese. Io sono finito in una scuola per ragazze, che
+              solo io e un mio amico potevamo lasciare nel pomeriggio. Le ragazze, sotto la cura delle suore, dovevano aspettare i giorni per tornare
+              a casa. E così, tra l'energia femminile, ho imparato a ricamare e a fare questo tipo di lavoro. Mi sentivo bene in questo posto, ma dopo
+              un anno la famiglia mi ha portato in una scuola a Palermo, dove le regole erano come nella giungla. Spostandomi negli anni, sia
+              all'estremo sud che nelle zone pedemontane, ho imparato a non avere attaccamento ai luoghi. Ho assorbito tutte le benedizioni che questo
+              tipo di vita offriva.
+            </p>
+            <p class="text-base mt-5">
+              Ho iniziato a lavorare nell'attività di famiglia già da adolescente, e con i primi soldi ho fatto un viaggio in Europa. Ho sempre
+              sentito un bisogno interiore di scoprire qualcosa di più della semplice sicurezza materiale, del comfort e dei viaggi interessanti.
+              Avendo sentito parlare per la prima volta del grande maestro del Tibet, che dopo l'occupazione del paese era stato invitato in Italia da
+              un professore dell'Università di Napoli e aveva assunto la cattedra di Studi Orientali, ho deciso di cercarlo. A quel tempo era già in
+              pensione e si era trasferito, costruendo una comunità intorno a sé, in Toscana, precisamente nella regione dell'Amiata. È qui che inizia
+              la mia storia, legata all'erboristeria, ma soprattutto a uno stile di vita in armonia con la natura e i suoi cicli. Mi sono stabilito
+              sotto il vecchio vulcano nel 1980 e sono qui ancora oggi, godendo delle benedizioni della natura locale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perché vivo qui... -->
+    <section class="bg-gray-200 py-25 px-10 max-md:py-18 max-md:px-6 max-sm:py-12 max-sm:px-4" id="about">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col gap-4 w-fit mx-auto my-4 mb-20">
+          <h3 class="text-green-700 text-2xl uppercase font-semibold">
+            L'Amiata e il mio posto sulla Terra.<br />
+            Montagnia, sorgenti termali, vicinanza dal mare.<br />
+            Condizioni ideali per la biodiversita.
+          </h3>
+          <h3 class="text-3xl font-semibold text-black">Perché vivo qui...</h3>
+          <h3 class="text-6xl font-semibold text-green-700">Amo l'Amiata!!!</h3>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="flex flex-col sm:flex-row">
+            <img src="images/raccolta-polline.jpg" alt="Raccolta di polline" class="w-full sm:w-1/2" />
+            <div class="w-full sm:w-1/2 bg-white p-8 flex flex-col items-center justify-center sm:p-16">
+              <h5 class="text-xl text-center font-extrabold">Raccolta polliine dei fiori di finocchio</h5>
+              <p class="italic mt-8">Finocchio</p>
+              <ul class="list-inside my-4">
+                <li>Proprieta:</li>
+                <li class="list-disc">aiuta la digestione</li>
+                <li class="list-disc">ha azione antifiammatoria</li>
+                <li class="list-disc">ricco di vitamine C,B e minerali (potassio, calcio)</li>
+              </ul>
+              <ul class="list-inside my-4">
+                <li>Utilizo:</li>
+                <li class="list-disc">in cucina: eccellente per piatti gourmet a base di pesce ed insalate</li>
+                <li class="list-disc">nella medicina popolare: sciroppo per la tosse</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row-reverse">
+            <img src="images/raccolta-verdure.jpg" alt="Raccolta di verdure" class="w-full sm:w-1/2" />
+            <div class="w-full sm:w-1/2 bg-white flex flex-col items-center justify-center p-8 sm:p-16">
+              <h5 class="text-xl text-center font-extrabold">La raccolta di verdure selvatiche nella zona dell'Aimiata 2025.</h5>
+              <p class="mt-8">A febraio si possono trovare molte piante commestibili, come:</p>
+              <ul class="list-inside my-4">
+                <li class="list-disc">
+                  <span class="italic">Tarassaco.</span> Foglie e fiori sono commestibili, mentre le radici si utilizzano in preparazioni galeniche,
+                  per la depurazione del fegato
+                </li>
+                <li class="list-disc"><span class="italic">Ortica.</span> Ottimo in cucina, per tisane disintossicanti</li>
+                <li class="list-disc">
+                  <span class="italic">Calendula.</span> Si usa per preparare unguenti e altri prodotti ottimi per la cura della pelle. In cucina si
+                  utlizza come succedaneo dello zafferano
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row">
+            <img src="images/acqua-filtrata.jpg" alt="Acqua" class="w-full sm:w-1/2" />
+            <div class="w-full sm:w-1/2 bg-white flex flex-col items-center justify-center p-8 sm:p-16">
+              <h5 class="text-xl text-center font-extrabold">
+                Nella mia vita e nell' mio lavoro uso solo i'acqua della fonti piu pure e selvagge dell' Amiata.
+              </h5>
+              <p class="mt-8">
+                Nell foto, l'acqua filtrata attraverso un masso gigante.<br />Riempire una bottiglia a'acqua richiede tempo, ma vale la pena
+                aspettare.<br />
+                L'acqua e cristallina e quando la luce cade sulla bottiglia piena con l'angolo giusto, appare un arcobaleno.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="py-25 px-10 max-md:py-18 max-md:px-6 max-sm:py-12 max-sm:px-4 bg-linear-to-b from-gray-200 to-orange-300" id="products">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-3 gap-10 max-md:grid-cols-1 max-md:gap-12">
+          <div class="text-center">
+            <img
+              src="images/unguento.jpg"
+              alt="Unguento dei nonni — arnica, calendula, propoli"
+              class="w-full aspect-square object-cover rounded-full mb-5 mx-auto"
+            />
+            <h3 class="mb-2.5">Unguento dei Nonni</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/INTEGRATORE.jpg" alt="Immunostimolante naturale" class="w-full aspect-square object-cover rounded-full mb-5 mx-auto" />
+            <h3 class="mb-2.5">Immunostimolante</h3>
+          </div>
+          <div class="text-center">
+            <img
+              src="images/OLEJKI_5sztuk.jpg"
+              alt="Oli essenziali e acque floreali"
+              class="w-full aspect-square object-cover rounded-full mb-5 mx-auto"
+            />
+            <h3 class="mb-2.5">Le Acque Floreali</h3>
+          </div>
+          <div class="text-center">
+            <img
+              src="images/unguetno-calendula.jpeg"
+              alt="Unguento con calendula"
+              class="w-full aspect-square object-cover rounded-full mb-5 mx-auto"
+            />
+            <h3 class="mb-2.5">Unguento alla Calendula</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/manna-mirra.jpg" alt="Manna e Mirra" class="w-full aspect-square object-cover rounded-full mb-5 mx-auto" />
+            <h3 class="mb-2.5">Manna e Mirra</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/oleoliti.jpg" alt="Oleoliti" class="w-full aspect-square object-cover rounded-full mb-5 mx-auto" />
+            <h3 class="mb-2.5">Oleoliti</h3>
+          </div>
+        </div>
+        <div class="text-center mt-16">
+          <h3 class="mb-5 text-green-700">I tesori della Natura - Oli Essenziali</h3>
+          <img src="images/OLEJKI_duzo.jpg" alt="Oli essenziali" class="w-full max-w-xl aspect-4/3 object-cover rounded-full mb-5 mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Vagabondaggio -->
+    <section class="bg-light py-25 px-10 max-md:py-18 max-md:px-6 max-sm:py-12 max-sm:px-4" id="gallery">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-xl font-semibold text-center mb-5 leading-tight text-green-700">Vagabondando sulle Montagne in cerca di erbe.</h2>
+        <p class="text-center text-lg max-w-xl mx-auto mb-15 opacity-80 leading-relaxed text-green-700">
+          I luoghi di raccolta sono a volte remoti e selvaggi.<br />Guidato dagli Spiriti della Natura, nell momento propizio.
+        </p>
+
+        <div class="grid grid-cols-[1fr_1.2fr] gap-6 items-stretch max-md:grid-cols-1 max-md:gap-5 max-w-5xl mx-auto">
+          <div class="max-h-[700px]">
+            <img src="images/ziola.jpg" alt="Erbe aromatiche" loading="lazy" class="h-full object-cover rounded-full" />
+          </div>
+          <div class="flex flex-col gap-5 max-md:contents max-h-[700px]">
+            <div class="flex-1 min-h-0 overflow-hidden rounded-full">
+              <img src="images/salvatore_lavanda.jpg" alt="Salvatore nel campo di lavanda" loading="lazy" class="object-cover" />
+            </div>
+            <div class="flex-1 min-h-0 overflow-hidden rounded-full">
+              <img src="images/campo-rosmarino.jpg" alt="Erbe fresche" loading="lazy" class="object-cover" />
+            </div>
+          </div>
+
+          <div class="max-h-[700px] overflow-hidden rounded-full">
+            <img src="images/IMG-20250715-WA0006.jpg" alt="Erbe aromatiche" loading="lazy" class="h-full object-cover" />
+          </div>
+          <div class="flex flex-col gap-5 max-md:contents max-h-[700px]">
+            <div class="flex-1 min-h-0 overflow-hidden rounded-full">
+              <img src="images/fiore-giallo.jpg" alt="Salvatore nel campo di lavanda" loading="lazy" class="object-cover" />
+            </div>
+            <div class="flex-1 min-h-0 overflow-hidden rounded-full">
+              <img src="images/zaino.jpg" alt="Zaino con erbe" loading="lazy" class="object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Le feste medievali -->
+    <section class="bg-white py-25 px-10 max-md:py-18 max-md:px-6 max-sm:py-12 max-sm:px-4" id="gallery">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-xl font-semibold text-center mb-5 leading-tight text-green-700">Le feste Medievali alle quali partecipo come Alchimista.</h2>
+        <p class="text-center text-lg max-w-xl mx-auto mb-15 opacity-80 leading-relaxed text-green-700">
+          Transformo sopratutto la materia grezza delle piante in profumi, oli essenziali e acque floreali, per la cura del corpo e della mente.
+        </p>
+
+        <div class="grid grid-cols-3 gap-10 max-md:grid-cols-1 max-md:gap-12">
+          <div class="text-center">
+            <img src="images/festa-1.jpg" alt="Festa medievale" class="w-full aspect-square object-cover rounded-full mb-5 mx-auto" />
+          </div>
+          <div class="text-center">
+            <img src="images/festa-2.jpg" alt="Festa medievale" class="w-full aspect-square object-cover rounded-full mb-5 mx-auto" />
+          </div>
+          <div class="text-center">
+            <img src="images/logo.jpg" alt="Logo alla festa medievale" class="w-full aspect-square object-cover rounded-full mb-5 mx-auto" />
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-5 my-8">
+          <img src="images/festa-4.jpeg" alt="Festa medievale" class="w-full sm:w-[40%] aspect-4/3 object-cover mx-auto" />
+          <img src="images/festa-5.jpg" alt="Festa medievale" class="w-full sm:w-[40%] aspect-4/3 object-cover mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatti -->
+    <section class="bg-green-brand text-white text-center py-30 px-10 max-md:py-20 max-md:px-6" id="contacts">
+      <h2 class="text-[clamp(28px,4vw,40px)] font-semibold mb-4">Scopri i Rimedi Naturali</h2>
+      <p class="text-lg opacity-80 mb-10 max-w-lg mx-auto">
+        Contattami per scoprire i prodotti disponibili o per ricevere un consiglio personalizzato.
+      </p>
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex flex-col items-center gap-8 text-[clamp(22px,3vw,32px)] font-semibold mb-4 leading-snug">
+          <div class="flex justify-center gap-5">
+            <a href="tel:+393201553542" class="hover:text-white/80 transition-colors">+39 320 155 3542</a><br />
+            <a
+              href="https://wa.me/393201553542"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              class="flex items-center justify-center rounded-full text-white hover:-translate-y-0.5 hover:opacity-85 transition-all duration-200"
+            >
+              <svg class="w-9 h-9 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a href="mailto:salvatore.alchimista@gmail.com" class="hover:text-white/80 transition-colors">salvatore.alchimista@gmail.com</a>
+        </div>
+        <p class="text-lg opacity-70 mb-6">Italia</p>
+        <!-- <div class="flex justify-center gap-3">
+          <a
+            href="https://www.facebook.com/salvatore.azzolini.5"
+            aria-label="Facebook"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-green-brand text-white hover:-translate-y-0.5 hover:opacity-85 transition-all duration-200"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-green-brand text-white hover:-translate-y-0.5 hover:opacity-85 transition-all duration-200"
+          >
+            <svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/393201553542"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+            class="flex items-center justify-center w-10 h-10 rounded-full text-white hover:-translate-y-0.5 hover:opacity-85 transition-all duration-200"
+          >
+            <svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+          </a>
+        </div> -->
+      </div>
+    </section>
+
+    <script>
+      document.getElementById('navBurger').addEventListener('click', function () {
+        var links = document.getElementById('navLinks');
+        links.classList.toggle('max-md:hidden');
+        links.classList.toggle('max-md:flex');
+      });
+
+      document.querySelectorAll('#navLinks a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var links = document.getElementById('navLinks');
+          links.classList.add('max-md:hidden');
+          links.classList.remove('max-md:flex');
+        });
+      });
+    </script>
+  </body>
+</html>
